@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>BLOG</h1>
+    </header>
+    <main id="main-page">
+      <button id="write-button">글쓰기</button>
+    </main>
+    <main id="write-page" style="display: none">
+      <form id="write-form">
+        <label for="title">제목:</label>
+        <input type="text" id="title" required />
+        <label for="content">내용:</label>
+        <input type="text" id="content" required />
+        <button type="submit" id="save-button">저장</button>
+      </form>
+    </main>
+    <main id="written-page" style="display: none">
+      <h3>작성글</h3>
+      <div id="written-article"></div>
+    </main>
+    <main id="list-page">
+      <h3>목록</h3>
+      <div id="lists"></div>
+    </main>
+    <footer>
+      <p>...</p>
+    </footer>
+  </body>
+  <script src="main.js"></script>
+</html>
